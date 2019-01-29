@@ -1,0 +1,20 @@
+body{
+    background:
+    url(https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.15752-9/50940380_338372510222566_3195879452647096320_n.jpg?_nc_cat=102&_nc_ht=scontent.fgdl3-1.fna&oh=93ed32e810ed0253c54b9575b5389b83&oe=5CFC52F2) no-repeat center center;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    height:100%;
+    width:100%;
+}
+h1{
+    color: white;
+    
+
+}
+
+p { 
+    color: blueviolet;
+
+}
