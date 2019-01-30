@@ -10,31 +10,28 @@
     <div id="root">
       <h1>· Encode Me ·</h1>
     </div>
-<br>
-<br>
-    <p>Con ésta herramienta online puees crear contraseñas y mensajes seguros con cifrado César. <br> <br> El cifrado César consiste en sustituir cada letra del abecedario por una letra desplazada un número determinado de posiciones (llave). </p>
-<br>
-<br>
-<br>
-
-    <input type="text" id="mensaje" class="redondeado" placeholder="Escribe tu palabra o mensaje" size="60">
+<br><br>
+    <p>Con ésta herramienta online puees crear contraseñas y mensajes seguros con cifrado César. <br> <br> El cifrado César consiste en sustituir cada letra del abecedario por una letra <br> desplazada un número determinado de posiciones (llave). </p>
+<br><br><br>
+<center>
+    <input type="text" id="message" class="redondeado" placeholder="Escribe tu palabra o mensaje" size="60" >
     <input type="button" value="Go">
-    <br>
-    <br>
-    <br>
-    <br>
-    <input type="number" name="insertllave" class= "redondeado" id="llave" placeholder="Ingrese la llave">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <button id="cifrar" onclick="FunctionA"> Cifrar </button> 
-    <button id="descifrar" onclick="FunctionB"> Descifrar </button>
-    
+    <br><br><br><br>
+    <input type="number" name="insertkey" class= "redondeado" id="key" placeholder="Ingrese la llave">
+  </center>
+    <br><br><br> <br><br><br>
+    <button id="cifrar" onclick="handleEncodeClick()"> Cifrar </button> <br>
+    <input type="text" id="resultadoEncriptar" class="redondeado" style="left:inherit" size="60">
+    <input type="button" value="Copiar Texto"  >
+    <br><br><br>
+  
+    <button id="descifrar" onclick="Desencriptar()"> Descifrar </button><br>
+    <input type="text" id="resultadoDesencriptar" class="redondeado" style="right:inherit" size="60">
+    <input type="button" value="Copiar Texto">
+  
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+  
   </body>
 </html>
