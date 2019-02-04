@@ -7,27 +7,27 @@
   </head>
   
   <body>
+    <center>
     <div id="root">
       <h1>· Encode Me ·</h1>
     </div>
 <br><br>
     <p>Con ésta herramienta online puees crear contraseñas y mensajes seguros con cifrado César. <br> <br> El cifrado César consiste en sustituir cada letra del abecedario por una letra <br> desplazada un número determinado de posiciones (llave). </p>
 <br><br><br>
-<center>
-    <input type="text" id="message" class="redondeado" placeholder="Escribe tu palabra o mensaje" size="60" >
-    <input type="button" value="Go">
+    <p>1.- Escribe tu palabra o mensaje!</p>
+    <textarea id="texto" rows= "10" cols="60" class="redondeado" size="60" ></textarea>
     <br><br><br><br>
-    <input type="number" name="insertkey" class= "redondeado" id="key" placeholder="Ingrese la llave">
-  </center>
+    <p>2.- Ingresa la llave</p>
+    <input type="number" name="insertkey" class= "redondeado" id="offset" >
     <br><br><br> <br><br><br>
-    <button id="cifrar" onclick="handleEncodeClick()"> Cifrar </button> <br>
-    <input type="text" id="resultadoEncriptar" class="redondeado" style="left:inherit" size="60">
+    <button type= "submit" 
+    onclick="encode"> Codificar </button>  
+    <button type="submit"
+    onclick="uncode"> Descodificar </button><br><br>
+    <textarea id="textResult" rows="10" cols="60" class="redondeado" size="60"> Aquí aparecerá tu texto </textarea> <br>
     <input type="button" value="Copiar Texto"  >
     <br><br><br>
-  
-    <button id="descifrar" onclick="Desencriptar()"> Descifrar </button><br>
-    <input type="text" id="resultadoDesencriptar" class="redondeado" style="right:inherit" size="60">
-    <input type="button" value="Copiar Texto">
+  </center>
   
 
     <script src="cipher.js"></script>
