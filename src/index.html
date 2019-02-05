@@ -18,12 +18,10 @@
     <textarea id="texto" rows= "10" cols="60" class="redondeado" size="60" ></textarea>
     <br><br><br><br>
     <p>2.- Ingresa la llave</p>
-    <input type="number" name="insertkey" class= "redondeado" id="offset" >
+    <input type="number" name="insertkey" class= "redondeado" id="key" >
     <br><br><br> <br><br><br>
-    <button type= "submit" 
-    onclick="encode"> Codificar </button>  
-    <button type="submit"
-    onclick="uncode"> Descodificar </button><br><br>
+    <button onclick="encodeButton()"> Codificar </button>  
+    <button onclick="uncodeButton()"> Descodificar </button><br><br>
     <textarea id="textResult" rows="10" cols="60" class="redondeado" size="60"> Aquí aparecerá tu texto </textarea> <br>
     <input type="button" value="Copiar Texto"  >
     <br><br><br>

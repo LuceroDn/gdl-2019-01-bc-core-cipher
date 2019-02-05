@@ -1,53 +1,15 @@
-let message;
-let string = [];
-let code = [];
-let n;
-let j;
-let newCode = [];
 
-encode = () => {
-    message = document.getElementById("texto").value;
-    n = document.getElementById("offset").value;
+ const encodeButton= () =>{
+    const string= document.getElementById("texto").value;
+    const offset= parseInt(document.getElementById("key").value);
+    let resultado =window.cipher.encode(string, offset);
+    document.getElementById("textResult").value = resultado;
 
-    for (j = 0; j < message,length; j++ ) {
-        string.push((message.charCodeAt(j))-65+n%26+65);
-        code.push(String.fromCharCode(string[j]));
-    }
-    newCode = code.join("");
-    document.getElementById("textResult").innerHTML = (newCode.toUpperCase());
+}
+const uncodeButton= () =>{
+    const string= document.getElementById("texto").value;
+    const offset= parseInt(document.getElementById("key").value);
+    let resultado =window.cipher.decode(string, offset);
+    document.getElementById("textResult").value = resultado;
 
-    string = [];
-    code = [];
-};
-
-uncode = () => {
-    message = document.getElementById("texto").value;
-    n = document.getElementById("offset").value;
-
-    for (j = 0; j < message,length; j++ ) {
-        string.push((message.charCodeAt(j))+65-n%26-65);
-        code.push(String.fromCharCode(string[j]));
-    }
-    newCode = code.join("");
-    document.getElementById("textResult").innerHTML = (newCode.toUpperCase());
-
-    string = [];
-    code = [];
-};
-
-
-
-
-
-
-// mensaje= () => {
-  //  document.getElementById(cifrar).value;
-//};
- //const handleEncodeClick= () => {
-   // const valor= document.getElementById(mensaje - "string").value;
-    //const valorllave= document.getElementById(numero + "offset").value;
-    //const result =window.cipher.encode(valor, valorllave);
-    //document.getElementById("textResult").value = result;
-
-     //}
-  
+}

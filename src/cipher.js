@@ -1,10 +1,30 @@
 window.cipher = {
-//alphabet: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-//encode: (offset, string) => {
-  //const alphabetSize= window.cipher.alphabet.length
-    
+  encode: (string, offset) => {
+    let output = "";
+   
+    for (let i = 0; i < string.length; i++) {
+      let result = string[i];
+      let code = string.charCodeAt(i);
+        result = String.fromCharCode((code - 65 + offset) % 26 + 65);
+   
+      output += result;
+    }
+   
+    return output;
+   },
+
+   decode: (string, offset) => {
+    let output = "";
+   
+    for (let i = 0; i < string.length; i++) {
+      let result = string[i];
+      let code = string.charCodeAt(i);
+        result = String.fromCharCode((code + 65 - offset) % 26 + 65);
+   
+      output += result;
+    }
+   
+    return output;
+   }
   
-  
-//window.cipher = {
-  //encode: encode,
- }
+  };
