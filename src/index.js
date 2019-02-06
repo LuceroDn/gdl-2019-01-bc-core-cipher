@@ -2,14 +2,23 @@
  const encodeButton= () =>{
     const string= document.getElementById("texto").value;
     const offset= parseInt(document.getElementById("key").value);
-    let resultado =window.cipher.encode(string, offset);
+    let resultado =window.cipher.encode(offset, string);
     document.getElementById("textResult").value = resultado;
+};
 
-}
+const cifrar = document.getElementById("encodeButton");
+cifrar.addEventListener("click", encodeButton );
+
 const uncodeButton= () =>{
     const string= document.getElementById("texto").value;
     const offset= parseInt(document.getElementById("key").value);
-    let resultado =window.cipher.decode(string, offset);
+    let resultado =window.cipher.decode(offset, string);
     document.getElementById("textResult").value = resultado;
+};
 
-}
+const descifrar = document.getElementById("uncodeButton");
+descifrar.addEventListener("click", uncodeButton );
+
+const funcion_reiniciar= () => {
+    document.getElementById("id_formulario").reset();
+    }
