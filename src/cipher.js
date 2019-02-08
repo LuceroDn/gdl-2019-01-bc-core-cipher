@@ -27,7 +27,7 @@ window.cipher = {
       let code = string.charCodeAt(i);
         result = String.fromCharCode((code + 65 - offset) % 26 + 65);
    
-      output += result;
+      output += result; 
      }
     }
    

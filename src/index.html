@@ -8,29 +8,36 @@
   
   <body>
     <center>
-    <div id="root">
+
+    <div id="root" class="item1">
       <h1>· Encode Me ·</h1>
-    </div>
-<br><br>
-    <p>Con ésta herramienta online puees crear contraseñas y mensajes seguros con cifrado César. <br> <br> El cifrado César consiste en sustituir cada letra del abecedario por una letra <br> desplazada un número determinado de posiciones (llave). </p>
-<br><br><br>
-    <p>1.- Escribe tu palabra o mensaje!</p>
+    </div><br>
+
+    <div class="item2">
+    <p>1.- Escribe tu palabra o mensaje</p>
     <form id="id_formulario" >
-    <textarea id="texto" rows= "10" cols="60" class="redondeado" size="60" ></textarea><br>
-    <input type="button" value="Reiniciar" onClick="funcion_reiniciar();"> 
-  </form>
-    <br><br><br><br>
+    <textarea id="texto" class="cuadroTexto" ></textarea><br>
+    </form></div><br>
+
+    <div class="item3">
+    <form id="limpiarLlave">
     <p>2.- Ingresa la llave</p>
-    <input type="number" name="insertkey" class= "redondeado" id="key" >
-    <br><br><br> <br><br><br>
-    <button id="encodeButton"> Codificar </button>  
-    <button id= "uncodeButton"> Descodificar </button><br><br>
-    <form id="id_formulario" >
-    <textarea id="textResult" rows="10" cols="60" class="redondeado" size="60"> Aquí aparecerá tu texto </textarea> <br>
-        
-        
-    <br><br><br>
-  </center>
+    <input type="number" name="insertkey" class= "llave" id="key" >
+    </form></div><br><br>
+
+    <div class="item4">    
+    <button id="encodeButton" class="button"> Codificar </button>
+    <button id= "uncodeButton" class="button"> Decodificar </button></div><br>
+
+    <div class="item5">
+    <form id="limpiarResultado">
+    <p>¡Éste es tu mensaje Codificado/Decodificado!</p>
+    <textarea id="textResult" class="cuadroTexto"></textarea></form></div> <br>
+
+    <div class="item6">
+    <input type="button" value="Reiniciar" id="limpiar" class="button"></div><br><br><br>
+  
+    </center>
   
 
     <script src="cipher.js"></script>

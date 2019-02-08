@@ -21,4 +21,9 @@ descifrar.addEventListener("click", uncodeButton );
 
 const funcion_reiniciar= () => {
     document.getElementById("id_formulario").reset();
+    document.getElementById("limpiarLlave").reset();
+    document.getElementById("limpiarResultado").reset();
     }
+
+    const clean = document.getElementById("limpiar");
+    clean.addEventListener("click", funcion_reiniciar);
