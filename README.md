@@ -10,12 +10,12 @@
 
 ### ¿Como funciona?
 ### Es muy fácil utilizarlo, solo debes seguir los pasos que se indican.
-### Paso 1.- Escribe tu palabra o mensaje (Debe ser en mayúsculas).
+### Paso 1.- Escribe tu palabra o mensaje.
 ### Paso 2.- Ingresa la llave (#Deslazamientos) (Deben ser número enteros positivos).
-### Paso 3.- Presiona el botón de "Codificar" o "Decodificar"
-### Paso 4.- Podrás ver tu resultado
-### (Y si deseas ingresar otra palabra)
-### Paso 5.- Oprime el botón de "Reiniciar"
+### Paso 3.- Presiona el botón de "Codificar" o "Decodificar".
+### Paso 4.- Podrás ver tu resultado.
+### (Y si deseas ingresar otra palabra).
+### Paso 5.- Oprime el botón de "Reiniciar".
 ### (Regresa al paso 1).
 
 

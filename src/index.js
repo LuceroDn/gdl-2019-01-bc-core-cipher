@@ -27,3 +27,7 @@ const funcion_reiniciar= () => {
 
     const clean = document.getElementById("limpiar");
     clean.addEventListener("click", funcion_reiniciar);
+
+    function mayus(e) {
+        e.value = e.value.toUpperCase();
+    }
