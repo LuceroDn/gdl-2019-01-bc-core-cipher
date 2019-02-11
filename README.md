@@ -10,7 +10,7 @@
 
 ### ¿Como funciona?
 ### Es muy fácil utilizarlo, solo debes seguir los pasos que se indican.
-### Paso 1.- Escribe tu palabra o mensaje.
+### Paso 1.- Escribe la palabra o mensaje.
 ### Paso 2.- Ingresa la llave (#Deslazamientos) (Deben ser número enteros positivos).
 ### Paso 3.- Presiona el botón de "Codificar" o "Decodificar".
 ### Paso 4.- Podrás ver tu resultado.
